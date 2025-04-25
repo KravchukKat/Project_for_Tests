@@ -3,7 +3,7 @@
     "project": "MyTestsProject",
     "environment": "qa.guru",
     "comment": "comment @Kravchuk_Kat",
-    "reportLink": "https://jenkins.autotests.cloud/job/demoqa_test_2/",
+    "reportLink": "https://jenkins.autotests.cloud/job/project-for-tests/",
     "language": "en",
     "allureFolder": "allure-report",
     "enableChart": true
