@@ -51,6 +51,6 @@ tasks.withType(Test) {
 
 task MyProject_test(type: Test) {
     useJUnitPlatform {
-        includeTags("my")
+        includeTags("MyProject")
     }
 }
