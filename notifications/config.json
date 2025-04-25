@@ -3,7 +3,7 @@
     "project": "MyTestsProject",
     "environment": "qa.guru",
     "comment": "comment @Kravchuk_Kat",
-    "reportLink": "https://jenkins.autotests.cloud/job/project-for-tests/",
+    "reportLink": "https://jenkins.autotests.cloud/job/project_for_tests_notifications/",
     "language": "en",
     "allureFolder": "allure-report",
     "enableChart": true
