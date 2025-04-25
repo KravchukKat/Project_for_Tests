@@ -22,7 +22,7 @@ public class SpasiboSberbankPage {
 
 
     public SpasiboSberbankPage openPage() {
-        open("https://spasibosberbank.ru/");
+        open("https://spasibosberbank.ru");
         return this;
     }
 

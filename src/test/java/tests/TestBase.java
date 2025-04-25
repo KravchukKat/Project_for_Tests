@@ -16,7 +16,7 @@ public class TestBase {
         @BeforeAll
 
         static void setupEnvironment() {
-            Configuration.baseUrl = "https://spasibosberbank.ru/";
+            Configuration.baseUrl = "https://spasibosberbank.ru";
             Configuration.timeout = 5000;
 
             Configuration.browser = System.getProperty("browser", "chrome");
