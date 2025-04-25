@@ -14,11 +14,7 @@ import java.util.Map;
 public class TestBase {
 
         @BeforeAll
-//        static void beforeAll() {
-//            Configuration.baseUrl = "https://spasibosberbank.ru/";
-//            Configuration.pageLoadStrategy = "eager";
-//
-//        }
+
         static void setupEnvironment() {
             Configuration.baseUrl = "https://spasibosberbank.ru/";
             Configuration.timeout = 5000;
