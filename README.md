@@ -1,5 +1,6 @@
+<a href="https://spasibosberbank.ru/"><img src="media/logo/logo.3bbb7572.png" width="175" height="52"></a>
 
-<h1 >Демопроект по автоматизации тестирования для <a href="https://spasibosberbank.ru/"><img src="media/logo/logo.3bbb7572.png" width="175" height="52"  alt="СберСпасибо"/></a></h1>
+<h1 >Демопроект по автоматизации тестирования для <a href="https://spasibosberbank.ru/">СберСпасибо</a></h1>
 
 ## ☑️ Содержание:
 
