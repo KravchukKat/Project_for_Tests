@@ -94,7 +94,6 @@ MyProject_test
 
 <p align="center">  
 <img title="Jira" src="media/screen/Jira1.png" width=""> 
-
 <img title="Jira" src="media/screen/Jira2.png" width=""> 
 </p>
 
