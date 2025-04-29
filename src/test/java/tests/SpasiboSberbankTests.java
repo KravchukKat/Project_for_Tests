@@ -9,6 +9,7 @@ import pages.*;
 import static io.qameta.allure.Allure.step;
 
 @Tag("MyProject")
+@Owner("KravchukK")
 public class SpasiboSberbankTests extends TestBase{
     SpasiboSberbankPage spasiboSberbankPage = new SpasiboSberbankPage();
     CouponsPage couponsPage = new CouponsPage();
@@ -17,76 +18,51 @@ public class SpasiboSberbankTests extends TestBase{
     SberPrimePage sberPrimePage = new SberPrimePage();
     LotteryPage lotteryPage = new LotteryPage();
 
-    @DisplayName("Проверка наличия купонов")
+    @DisplayName("Переходим на страницу 'Купоны' и проверяем наличие купонов")
     @Test
-    @Owner("KravchukK")
     void searchShouldHaveCouponsTest() {
-        step("Переходим на страницу 'Купоны'", () ->
-                spasiboSberbankPage.openPage()
+        spasiboSberbankPage.openPage()
                         .removeBanners()
-                        .hoverToElementСoupons()
-        );
-        step("Проверяем наличие купонов", () ->
-                couponsPage.setCouponsListPage()
-        );
+                        .hoverToElementСoupons();
+        couponsPage.setCouponsListPage();
     }
 
-    @DisplayName("Проверка возможности покупки ЖД билетов")
+    @DisplayName("В разделе меню 'Тревел' переходим на страницу 'ЖД' и проверяем возможность покупки жд билетов")
     @Test
-    @Owner("KravchukK")
     void searchTravelTicketsTest() {
-        step("В разделе меню 'Тревел' переходим на страницу 'ЖД'", () ->
-            spasiboSberbankPage.openPage()
+        spasiboSberbankPage.openPage()
                     .removeBanners()
-                    .hoverToElementTravel()
-        );
-        step("Проверяем возможность покупки ЖД билетов", () ->
-            railwayTicketsPage.setFindByRailwayTickets()
-                    .setSearchButton()
-        );
+                    .hoverToElementTravel();
+        railwayTicketsPage.setFindByRailwayTickets()
+                    .setSearchButton();
     }
 
-    @DisplayName("Проверка перевода бонусов на благотворительность")
+    @DisplayName("В разделе меню 'Переводы и обмен' переходим на страницу 'Благотворительность' и проверяем возможность перевода бонусов на благотворительность")
     @Test
-    @Owner("KravchukK")
     void searchTransfersAndExchangesTest() {
-        step("В разделе меню 'Переводы и обмен' переходим на страницу 'Благотворительность'", () ->
-                spasiboSberbankPage.openPage()
+        spasiboSberbankPage.openPage()
                         .removeBanners()
-                        .hoverToElementTransfersAndExchanges()
-        );
-        step("Проверяем возможность перевода бонусов на благотворительность", () ->
-                charityPage.setFindBySectionСharity()
-                        .setSearchСharity()
-        );
+                        .hoverToElementTransfersAndExchanges();
+        charityPage.setFindBySectionСharity()
+                        .setSearchСharity();
     }
 
-    @DisplayName("Проверка подписки СберПрайм")
+    @DisplayName("Переходим в раздел меню 'СберПрайм' и Проверяем наличие подписки СберПрайм")
     @Test
-    @Owner("KravchukK")
     void searchSubscriptionTest() {
-        step("Переходим в раздел меню 'СберПрайм'", () ->
-            spasiboSberbankPage.openPage()
+        spasiboSberbankPage.openPage()
                     .removeBanners()
-                    .hoverToElementSberPrime()
-        );
-        step("Проверяем наличие подписки СберПрайм", () ->
-            sberPrimePage.setSberPrimePage()
-        );
+                    .hoverToElementSberPrime();
+        sberPrimePage.setSberPrimePage();
     }
 
-    @DisplayName("Проверка вариантов Лотереи")
+    @DisplayName("Переходим в раздел меню 'Лотереи' и Проверяем наличие лотереи")
     @Test
-    @Owner("KravchukK")
     void searchShouldHaveLotteriesTest() {
-        step("Переходим в раздел меню 'Лотереи'", () ->
-                spasiboSberbankPage.openPage()
+        spasiboSberbankPage.openPage()
                         .removeBanners()
-                        .hoverToElementLotteries()
-        );
-        step("Проверяем наличие Лотереи", () ->
-                lotteryPage.setLotteryPage()
-        );
+                        .hoverToElementLotteries();
+        lotteryPage.setLotteryPage();
     }
 
 }
